@@ -32,4 +32,18 @@ public class BuildingOnMap implements ObjectOnMap {
     public Point getPosition(){
         return new Point(position.x, position.y);
     }
+
+    public void setCurrentHealth(int currentHealth) {
+        this.currentHealth = currentHealth;
+    }
+
+    public int getCurrentHealth(){
+        return currentHealth;
+    }
+
+    synchronized public boolean isDestroyed(){
+        if (currentHealth<=0)
+            return true;
+        else return false;
+    }
 }

@@ -43,15 +43,24 @@ public class UnitOnMap implements Movable,ObjectOnMap {
         }
     }
 
-    synchronized public void attackUnit(BuildingOnMap attackedBuilding) {
+    synchronized public void attackBuilding(BuildingOnMap attackedBuilding) {
         if (abs(this.position.x - attackedBuilding.getPosition().x) +
-                abs(this.position.y - attackedBuilding.getPosition().y) < this.unitGroup.getRange()){
-
+                abs(this.position.y - attackedBuilding.getPosition().y) < this.unitGroup.getRange()) {
+            int spiritOfGroup = this.unitGroup.getSpiritPerUnit() * currentNumberInGroup;
+            int damage = this.unitGroup.getDamagePerUnit() * this.currentNumberInGroup*this.currentSpirit / spiritOfGroup;
+            int newHealth = attackedBuilding.getCurrentHealth()-damage;
+            attackedBuilding.setCurrentHealth(newHealth);
         }
 
     }
 
-    synchronized public void restoreSpitit(){
+    synchronized public boolean isDestroyed(){
+        if (currentHealth<=0)
+            return true;
+        else return false;
+    }
+
+    synchronized public void restoreSpitit() {
         currentSpirit++;
     }
 }

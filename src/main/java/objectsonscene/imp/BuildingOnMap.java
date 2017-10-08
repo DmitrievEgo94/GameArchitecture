@@ -1,4 +1,4 @@
-package objectsonscene.impl;
+package objectsonscene.imp;
 
 import gameobjects.core.RaceBuilding;
 import gameobjects.core.UnitGroup;

@@ -1,8 +1,8 @@
 package objectsonscene.core;
 
 import gameobjects.core.UnitGroup;
-import objectsonscene.impl.BuildingOnMap;
-import objectsonscene.impl.UnitOnMap;
+import objectsonscene.imp.BuildingOnMap;
+import objectsonscene.imp.UnitOnMap;
 
 import java.awt.*;
 

@@ -1,10 +1,10 @@
-package gameobjects.objectsonscene.impl;
+package objectsonscene.impl;
 
 
 import gameobjects.core.Race;
 import gameobjects.core.UnitGroup;
 import gameobjects.imp.Resources;
-import gameobjects.objectsonscene.core.PlayerActions;
+import objectsonscene.core.PlayerActions;
 
 import java.awt.*;
 import java.util.List;

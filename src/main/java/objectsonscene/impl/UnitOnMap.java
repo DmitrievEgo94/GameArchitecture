@@ -1,9 +1,9 @@
-package gameobjects.objectsonscene.impl;
+package objectsonscene.impl;
 
 
 import gameobjects.core.RaceBuilding;
 import gameobjects.core.UnitGroup;
-import gameobjects.objectsonscene.core.Movable;
+import objectsonscene.core.Movable;
 
 import java.awt.*;
 

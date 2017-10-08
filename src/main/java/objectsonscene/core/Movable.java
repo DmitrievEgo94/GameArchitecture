@@ -1,4 +1,4 @@
-package gameobjects.objectsonscene.core;
+package objectsonscene.core;
 
 import java.awt.*;
 

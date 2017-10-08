@@ -1,3 +1,5 @@
+package gameobjects.objectsonscene.core;
+
 import java.awt.*;
 
 public interface Movable {
